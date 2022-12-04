@@ -2,7 +2,7 @@ async function entityDialog(entity, title = "", text = "", switchingSpeed = 100)
     try {
         var content = '', resume = !1, resumed = !0;
         for (let i = 0; i < text.length; i++) {
-            entity.cancelDialogs();
+            entity.player.cancelDialogs();
             if (resume && resumed) {
                 content = text;
                 i = text.length - 2;
@@ -10,22 +10,22 @@ async function entityDialog(entity, title = "", text = "", switchingSpeed = 100)
             } else {
                 content += text[i];
             };
-            entity.dialog({
+            entity.player.dialog({
                 type: "text",
                 title,
-                content: resume ? text : content,
+                content,
             }).then((v) => {
                 if (v) { resume = !0 }
             });
             await sleep(switchingSpeed);
         };
         resume = !0;
-        entity.cancelDialogs();
-        entity.dialog({
+        entity.player.cancelDialogs();
+        entity.player.dialog({
             type: "text",
             title,
             content: text,
-            hasArrow: true,
+            hasArrow: !0,
         })
     } catch (e) {
         throw TypeError("Invalid parameter.");
