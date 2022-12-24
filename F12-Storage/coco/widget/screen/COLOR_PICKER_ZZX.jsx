@@ -1,14 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/react-in-jsx-scope */
 
-/*
- * 鍢匡紝娆㈣繋浣跨敤棰滆壊閫夋嫨鍣紝鐢变腑瀛愭槦000鍒朵綔
- * 浣滆€咃細涓瓙鏄�000
- * 涓婚〉锛歨ttps://shequ.codemao.cn/user/2867423
- * QQ锛�2422481178
- * 浣跨敤鏂规硶锛氬瓧闈㈡剰鎬�
- */
-
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Color = require('color');
 
@@ -21,22 +13,22 @@ const BLOCK_ICON =
 const types = {
   type: 'COLOR_PICKER_ZZX_WIDGET',
   icon: WIDGET_ICON,
-  title: '棰滆壊閫夋嫨鍣�',
+  title: '颜色选择器',
   version: '1.0.0',
   platforms: ['android', 'ios', 'web'],
   isInvisibleWidget: false,
   isGlobalWidget: false,
   properties: [
     {
-      key: '__width', // 鍐呯疆灞炴€�
+      key: '__width',
       label: '宽度',
-      valueType: 'number', // 鏁板瓧绫诲瀷
+      valueType: 'number',
       defaultValue: 36,
     },
     {
-      key: '__height', // 鍐呯疆灞炴€�
+      key: '__height',
       label: '高度',
-      valueType: 'number', // 鏁板瓧绫诲瀷
+      valueType: 'number', 
       defaultValue: 36,
     },
     {
