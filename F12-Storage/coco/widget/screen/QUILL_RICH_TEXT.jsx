@@ -14,7 +14,7 @@ const types = {
         label: '文本',
         valueType: 'richTextString',
         defaultValue:
-          '<p><strong class="ql-size-title2" style="color: rgb(56, 56, 56); background-color: rgb(183, 221, 251);"><em><u>瀵屾枃鏈�</u></em></strong></p>',
+          '<p><strong class="ql-size-title2" style="color: rgb(56, 56, 56); background-color: rgb(183, 221, 251);"><em><u>富文本</u></em></strong></p>',
         editorType: 'RichTextEditor',
       },
       {
